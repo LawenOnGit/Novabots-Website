@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Novabot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/Novalogo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="navbar">
+  <div class="logo">
+    <img src="img/Novalogo.gif" alt="Logo Novabot">
+    <span>Novabot</span>
+  </div>
+
+  <!-- Bouton hamburger (visible que sur mobile) -->
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Nav desktop (centré) -->
+  <ul class="nav-links desktop-nav">
+    <li><a href="#features">Fonctionnalités</a></li>
+    <li><a href="#stats">Statistiques</a></li>
+    <li><a href="#why">Pourquoi Novabot ?</a></li>
+    <li><a href="#pricing">Tarifs</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+
+  <!-- Menu mobile (panneau latéral) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <img src="img/Novalogo.gif" alt="Logo Novabot">
+        <span>Menu</span>
+      </div>
+      <button class="close-btn" id="closeMenu" aria-label="Fermer">✕</button>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link">
+        <span class="link-icon">🏠</span>
+        <span>Accueil</span>
+      </a>
+      <a href="docs.html" class="mobile-nav-link">
+        <span class="link-icon">📖</span>
+        <span>Documentation</span>
+      </a>
+      <a href="terms.html" class="mobile-nav-link">
+        <span class="link-icon">📜</span>
+        <span>CGU & Confidentialité</span>
+      </a>
+      <a href="#pricing" class="mobile-nav-link">
+        <span class="link-icon">💎</span>
+        <span>Tarifs</span>
+      </a>
+
+      <div class="mobile-divider"></div>
+
+      <a href="https://discord.gg/TON_SERVEUR" target="_blank" class="mobile-nav-link external">
+        <span class="link-icon">💬</span>
+        <span>Serveur Discord</span>
+      </a>
+      <a href="index.html#invite" class="mobile-nav-link">
+        <span class="link-icon">➕</span>
+        <span>Ajouter Novabot</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Overlay sombre quand menu ouvert -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+</nav>
+
+
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Le bot ultime pour booster ton serveur Discord.</h1>
+        <p>
+          Novabot automatise ta modération, sécurise ta communauté
+          et ajoute une touche rétro‑gaming à ton serveur.
+        </p>
+        <div class="hero-actions">
+          <a href="#invite" class="btn btn-primary">Ajouter Novabot</a>
+          <a href="docs.html" class="btn btn-ghost">Voir la documentation</a>
+        </div>
+        <div class="hero-meta">
+          <span>• 24h/24 - 7j/7</span>
+          <span>• Performance & sécurité</span>
+          <span>• Interface moderne</span>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="screen">
+          <img src="img/Novabanner.gif" alt="Bannière Novabot">
+          <div class="screen-overlay">PRESS START</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="stats" class="section section-dark">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <span class="stat-value">+10</span>
+          <span class="stat-label">Serveurs protégés</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">+100</span>
+          <span class="stat-label">Communautés satisfaites</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">-1 ans</span>
+          <span class="stat-label">d'expérience</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">Fonctionnalités de Novabot</h2>
+        <p class="section-subtitle">
+          Pensé pour la gestion, la sécurité et l'animation de ton serveur Discord.
+        </p>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <h3>Modération intelligente</h3>
+            <p>
+              Système d’anti‑raid, filtrage automatique, sanctions configurables et logs détaillés
+              pour garder ton serveur propre sans effort.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Outils de sécurité</h3>
+            <p>
+              Protection avancée contre les spams, vérification des nouveaux membres et
+              alerts en temps réel.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Personnalisation avancée</h3>
+            <p>
+              Préfixes personnalisés, messages de bienvenue stylés, réactions automatiques,
+              et plus encore.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Musique & fun</h3>
+            <p>
+              Commandes musicales, mini‑jeux et commandes fun pour rendre ta communauté active.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section section-dark">
+      <div class="container why-grid">
+        <div class="why-intro">
+          <h2 class="section-title">Pourquoi choisir Novabot ?</h2>
+          <p>
+            Novabot ne se contente pas de fournir des commandes. C’est un véritable
+            assistant conçu pour optimiser ton serveur, améliorer l’expérience des
+            membres et te faire gagner du temps.
+          </p>
+        </div>
+        <div class="why-cards">
+          <div class="why-card">
+            <h3>Installation instantanée</h3>
+            <p>
+              Invite le bot, configure quelques commandes, et ton serveur est prêt en quelques minutes.
+            </p>
+          </div>
+          <div class="why-card">
+            <h3>Support 24/7</h3>
+            <p>
+              Une équipe disponible et une documentation claire pour t’aider à chaque étape.
+            </p>
+          </div>
+          <div class="why-card">
+            <h3>Mises à jour continues</h3>
+            <p>
+              Nouvelles fonctionnalités, optimisation et corrections déployées régulièrement.
+            </p>
+          </div>
+          <div class="why-card">
+            <h3>Dashboard moderne</h3>
+            <p>
+              Interface web simple pour gérer les paramètres sans passer par les commandes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section section-dark">
+  <div class="container">
+    <h2 class="section-title">Tarifs</h2>
+    <p class="section-subtitle">
+      Choisis la licence qui correspond le mieux à ton serveur.
+    </p>
+
+    <div class="pricing-cards-grid">
+      <article class="license-card">
+        <div class="license-card-preview">
+          <img src="img/cmdProtect.png" alt="Licence Novabot Gestion">
+        </div>
+        <div class="license-card-body">
+          <h3>Licence pour le Bot Gestion</h3>
+          <p class="license-stock">En stock</p>
+          <p class="license-price">Prix <span>Non disponible.</span></p>
+        </div>
+        <button class="license-action-btn" aria-label="Voir la licence Gestion">
+          <span>➜</span>
+        </button>
+      </article>
+
+      <article class="license-card">
+        <div class="license-card-preview">
+          <img src="img/cmdProtect.png" alt="Licence Novabot Protect">
+        </div>
+        <div class="license-card-body">
+          <h3>Licence pour le Bot Protect</h3>
+          <p class="license-stock">En stock</p>
+          <p class="license-price">Prix <span>€1.49 - €33.99</span></p>
+        </div>
+        <button class="license-action-btn" aria-label="Voir la licence Protect">
+          <span>➜</span>
+        </button>
+      </article>
+
+      <article class="license-card">
+        <div class="license-card-preview">
+          <img src="img/cmdProtect.png" alt="Licence Novabot Radio">
+        </div>
+        <div class="license-card-body">
+          <h3>Licence pour le Bot Radio</h3>
+          <p class="license-stock">En stock</p>
+          <p class="license-price">Prix <span>Non disponible.</span></p>
+        </div>
+        <button class="license-action-btn" aria-label="Voir la licence radio">
+          <span>➜</span>
+        </button>
+      </article>
+
+      <article class="license-card">
+        <div class="license-card-preview">
+          <img src="img/cmdProtect.png" alt="Licence Novabot Tools">
+        </div>
+        <div class="license-card-body">
+          <h3>Licence pour le Bot Tools</h3>
+          <p class="license-stock">En stock</p>
+          <p class="license-price">Prix <span>Non disponible.</span></p>
+        </div>
+        <button class="license-action-btn" aria-label="Voir la licence Tools">
+          <span>➜</span>
+        </button>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <section id="faq" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-list">
+          <article class="faq-item">
+            <button class="faq-question">
+              Comment inviter Novabot sur mon serveur ?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Clique sur le bouton "Ajouter Novabot", choisis ton serveur dans la liste,
+                et valide les permissions demandées.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              Novabot est‑il gratuit ?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Oui, une version gratuite est disponible. Des options premium offrent des
+                fonctionnalités avancées pour les gros serveurs.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="invite" class="section cta">
+      <div class="container cta-inner">
+        <div>
+          <h2 class="section-title">Prêt à lancer Novabot ?</h2>
+          <p>
+            Rejoins les milliers de serveurs qui font déjà confiance à Novabot
+            pour protéger et animer leur communauté.
+          </p>
+        </div>
+        <a href="https://discord.com/oauth2/authorize?client_id=TON_CLIENT_ID&scope=bot%20applications.commands&permissions=8"
+           class="btn btn-primary">
+          Ajouter Novabot
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 Novabot. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="#top">Accueil</a>
+        <a href="docs.html">Documentation</a>
+        <a href="https://discord.gg/EXQ2EAAG8b" target="_blank">Serveur Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

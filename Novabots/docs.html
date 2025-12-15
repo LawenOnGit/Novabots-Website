@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentation - Novabot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/docs.css">
+</head>
+<body>
+  <header class="docs-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="img/Novalogo.gif" alt="Novabot">
+        <span>Novabot Docs</span>
+      </div>
+      <nav class="header-nav">
+        <a href="nova.html">Accueil</a>
+        <a href="terms.html">CGU</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="docs-main">
+    <div class="container docs-layout">
+      <!-- Sidebar -->
+      <aside class="docs-sidebar">
+        <div class="sidebar-section">
+          <p class="sidebar-title">Guide de démarrage</p>
+          <button class="sidebar-link active" data-target="intro">Introduction</button>
+          <button class="sidebar-link" data-target="invite">Inviter Novabot</button>
+          <button class="sidebar-link" data-target="permissions">Permissions requises</button>
+        </div>
+
+        <div class="sidebar-section">
+          <p class="sidebar-title">Configuration</p>
+          <button class="sidebar-link" data-target="setup">Configuration de base</button>
+          <button class="sidebar-link" data-target="moderation">Module modération</button>
+          <button class="sidebar-link" data-target="logs">Logs & sécurité</button>
+        </div>
+
+        <div class="sidebar-section">
+          <p class="sidebar-title">Licences & Dashboard</p>
+          <button class="sidebar-link" data-target="licenses">Gérer ses licences</button>
+          <button class="sidebar-link" data-target="billing">Facturation</button>
+        </div>
+
+        <div class="sidebar-section">
+          <p class="sidebar-title">Divers</p>
+          <button class="sidebar-link" data-target="faq">FAQ</button>
+          <button class="sidebar-link" data-target="support">Support</button>
+        </div>
+      </aside>
+
+      <!-- Contenu -->
+      <section class="docs-content">
+        <!-- Intro -->
+        <article id="intro" class="docs-article active">
+          <h1>Bienvenue dans la documentation de Novabot</h1>
+          <p>
+            Cette documentation te guide pour installer, configurer et administrer Novabot
+            sur ton serveur Discord.
+          </p>
+          <p>
+            Commence par inviter le bot, configure les permissions de base, puis explore
+            les différents modules (modération, logs, automatisations, etc.).
+          </p>
+        </article>
+
+        <!-- Inviter Novabot -->
+        <article id="invite" class="docs-article">
+          <h1>Inviter Novabot sur ton serveur</h1>
+          <ol>
+            <li>Clique sur le bouton <strong>Ajouter Novabot</strong> sur la page d’accueil.</li>
+            <li>Sélectionne le serveur sur lequel tu veux ajouter le bot.</li>
+            <li>Vérifie que les permissions cochées correspondent à tes besoins.</li>
+            <li>Valide l’autorisation et attends que Novabot rejoigne ton serveur.</li>
+          </ol>
+          <p>
+            Une fois le bot ajouté, assure‑toi que son rôle est au dessus des rôles
+            qu’il doit gérer dans l’onglet <strong>Rôles</strong> de Discord.
+          </p>
+        </article>
+
+        <!-- Permissions -->
+        <article id="permissions" class="docs-article">
+          <h1>Permissions requises</h1>
+          <p>
+            Pour fonctionner correctement, Novabot a besoin de certaines permissions
+            Discord (lecture/écriture, gestion des messages, bannissement, etc.).
+          </p>
+          <ul>
+            <li><strong>Gérer les messages</strong> : suppression automatique, anti‑spam.</li>
+            <li><strong>Exclure / bannir des membres</strong> : commandes de modération.</li>
+            <li><strong>Gérer les rôles</strong> : attribution de rôles automatiques.</li>
+          </ul>
+          <p>
+            Tu peux désactiver certaines fonctionnalités si tu ne souhaites pas
+            accorder toutes les permissions.
+          </p>
+        </article>
+
+        <!-- Setup -->
+        <article id="setup" class="docs-article">
+          <h1>Configuration de base</h1>
+          <p>
+            Après avoir invité Novabot, commence par définir le préfixe, les salons
+            par défaut et la langue.
+          </p>
+          <p>
+            Utilise la commande <code>/config</code> ou le dashboard pour modifier
+            ces paramètres à tout moment.
+          </p>
+        </article>
+
+        <!-- Moderation -->
+        <article id="moderation" class="docs-article">
+          <h1>Module modération</h1>
+          <p>
+            Le module de modération permet de gérer les warns, mutes, kicks, bans
+            ainsi que l’anti‑raid et l’anti‑spam.
+          </p>
+          <p>
+            Tu peux ajuster la sévérité des sanctions, les durées par défaut et les
+            salons où les logs de modération sont envoyés.
+          </p>
+        </article>
+
+        <!-- Logs -->
+        <article id="logs" class="docs-article">
+          <h1>Logs & sécurité</h1>
+          <p>
+            Les logs te permettent de suivre ce qui se passe sur ton serveur
+            (sanctions, joins/leaves, modifications de rôles, etc.).
+          </p>
+          <p>
+            Configure un salon dédié aux logs dans le dashboard ou via la commande
+            prévue pour garder une trace des actions importantes.
+          </p>
+        </article>
+
+        <!-- Licences -->
+        <article id="licenses" class="docs-article">
+          <h1>Gérer ses licences</h1>
+          <p>
+            Les licences te donnent accès aux fonctionnalités premium de Novabot
+            (performances avancées, modules supplémentaires, support prioritaire).
+          </p>
+          <p>
+            Connecte‑toi sur le <strong>Dashboard</strong> avec ton compte Discord
+            pour voir la liste de tes licences, leur statut et leurs dates d’expiration.
+          </p>
+        </article>
+
+        <!-- Billing -->
+        <article id="billing" class="docs-article">
+          <h1>Facturation & paiements</h1>
+          <p>
+            Les paiements sont traités via nos prestataires sécurisés
+            (par exemple Stripe ou PayPal, selon ce que tu utiliseras).
+          </p>
+          <p>
+            En cas de question concernant une facture ou un renouvellement, ouvre
+            un ticket sur le serveur support Novabot avec l’e‑mail de paiement.
+          </p>
+        </article>
+
+        <!-- FAQ -->
+        <article id="faq" class="docs-article">
+          <h1>FAQ</h1>
+          <p><strong>Novabot est‑il gratuit ?</strong></p>
+          <p>
+            Une version gratuite est disponible avec les fonctionnalités essentielles.
+            Les licences ajoutent des options avancées pour les serveurs exigeants.
+          </p>
+          <p><strong>Le bot fonctionne‑t‑il 24/7 ?</strong></p>
+          <p>
+            Oui, l’infrastructure est pensée pour une disponibilité maximale, mais
+            des maintenances ponctuelles peuvent avoir lieu.
+          </p>
+        </article>
+
+        <!-- Support -->
+        <article id="support" class="docs-article">
+          <h1>Support</h1>
+          <p>
+            Pour toute question ou problème, rejoins le serveur Discord de support
+            Novabot et ouvre un ticket dans le salon prévu à cet effet.
+          </p>
+          <p>
+            Merci de fournir un maximum d’informations (ID du serveur, captures,
+            commandes utilisées) afin de nous aider à résoudre ton problème rapidement.
+          </p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <script src="/js/docs.js"></script>
+</body>
+</html>

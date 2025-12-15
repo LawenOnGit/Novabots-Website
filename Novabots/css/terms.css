@@ -1,0 +1,236 @@
+:root {
+  --bg: #02040a;
+  --bg-alt: #050816;
+  --primary: #2ee5ff;
+  --primary-soft: rgba(46, 229, 255, 0.18);
+  --text: #ffffff;
+  --muted: #a0a7c0;
+  --border: rgba(255, 255, 255, 0.06);
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Layout global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background: radial-gradient(circle at top, #071126 0, #02040a 55%, #000 100%);
+  color: var(--text);
+}
+
+.container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header */
+.terms-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(16px);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), transparent);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  box-shadow: 0 0 18px rgba(46, 229, 255, 0.7);
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.3rem;
+  font-size: 0.9rem;
+}
+
+.header-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  color: var(--primary);
+}
+
+/* Boutons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.btn-outline {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.btn-outline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* Hero */
+.terms-main {
+  padding-bottom: 4rem;
+}
+
+.hero {
+  padding: 4.5rem 0 2.5rem;
+}
+
+.hero-inner h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero-inner p {
+  color: var(--muted);
+  max-width: 620px;
+}
+
+.hero-tags {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  font-size: 0.85rem;
+}
+
+.hero-tags span {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--muted);
+}
+
+/* Sections */
+.section {
+  padding: 2.5rem 0 0;
+}
+
+.section-dark {
+  background: radial-gradient(circle at top, #050a18 0, #010308 100%);
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Cards de texte */
+.card {
+  margin-bottom: 1.7rem;
+  padding: 1.5rem 1.4rem;
+  border-radius: var(--radius-lg);
+  background: radial-gradient(circle at top left, var(--primary-soft), transparent 55%),
+              rgba(5, 9, 20, 0.98);
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.card li + li {
+  margin-top: 0.35rem;
+}
+
+/* Footer */
+.terms-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: #020308;
+  padding: 1.4rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .header-nav {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 3.5rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
